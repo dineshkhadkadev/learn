@@ -5,6 +5,9 @@ class person {
         this.lastName = lastName;
         this.age = age;
     }
+    static classInfo() {
+        return 'this is persi=on'
+    }
     get fullName() {
         return `${this.firstName} ${this.lastName}`;
     }
@@ -15,6 +18,6 @@ class person {
     }
 }
 const person1 = new person("dinesh", "khadka", 25);
-person1.fullName = "dinesh khadks";
+person1.fullName = "dinesh khadka";
 console.log(person1.fullName);
 
